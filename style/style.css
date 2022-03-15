@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.aparecer {
+  margin: 100px;
+  animation-duration: 8s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+body {
+  background-color: #cccbc6;
+  color: #333333;
+  width: 100%;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+.index {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 4fr 4fr 1fr;
+}
+.servicios {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "e f" "g h";
+}
+.e {
+  grid-area: e;
+}
+.f {
+  grid-area: f;
+}
+.g {
+  grid-area: g;
+}
+.h {
+  grid-area: h;
+}
+header {
+  text-align: center;
+  font-size: 0.5rem;
+}
+nav {
+  background: linear-gradient(to top, #b1b0ab, #cccbc6);
+  padding: 1px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0.2rem;
+  display: block;
+}
+nav ul a:hover {
+  text-decoration: underline;
+  color: rgb(143, 143, 143);
+  font-weight: bold;
+  font-size: 16.5px;
+}
+.imagencuadro {
+  width: 49%;
+}
+.cuadro {
+  display: inline-block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cuadro a img:hover {
+  opacity: 1;
+  border: solid rgb(8, 8, 8);
+}
+h2 {
+  font-family: "Roboto Serif", sans-serif;
+  font-size: 18px;
+}
+footer {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+}
