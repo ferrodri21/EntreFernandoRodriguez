@@ -56,26 +56,37 @@ header {
   text-align: center;
   font-size: 0.5rem;
 }
-nav {
+.barranav {
   background: linear-gradient(to top, #b1b0ab, #cccbc6);
   padding: 1px;
 }
-nav ul {
+.barranav ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
-nav ul a {
+.barranav ul a {
   color: rgb(0, 0, 0);
   text-decoration: none;
   padding: 0.2rem;
   display: block;
 }
-nav ul a:hover {
+.barranav ul a:hover {
   text-decoration: underline;
   color: rgb(143, 143, 143);
   font-weight: bold;
   font-size: 16.5px;
+}
+.barranavfooter2 ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.barranavfooter2 ul a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0.2rem;
+  display: block;
 }
 .imagencuadro {
   width: 49%;
